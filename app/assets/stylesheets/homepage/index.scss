@@ -15,6 +15,8 @@ header {
   }
 }
 
+// hero section //
+
 .hero-section {
   height: 100vh;
   display: flex;
@@ -22,13 +24,14 @@ header {
   align-items: center;
   flex-flow: column nowrap;
 }
-
+// hero image //
 .hero-image {
-  height: 80vh;
+  height: calc(100vh - var(--hero-container-height));
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex: auto;
 }
 
 .img {
@@ -37,15 +40,58 @@ header {
   object-fit: cover;
   overflow: hidden;
 }
-
+// hero info section //
 .hero-container {
-  height: 20vh;
+  height: var(--hero-container-height);
   width: 100%;
   background-color: black;
   color: white;
-  border-top: 1px solid #a97c50;
+  border-top: 6px solid #a97c50;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
 }
 
-p {
-  font-family: "Rokkitt", serif;
+.hero-title-container {
+  padding-left: 4.5vw;
+  padding-top: 0.4rem;
+  padding-bottom: 0.8rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hero-form-container {
+  padding-right: 5vw;
+  padding-left: 4vw;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+
+.form-select-container{
+  display: flex;
+  gap: 1.1rem;
+}
+
+.hero-label-container {
+  height: 2rem;
+  width: 9.2rem;
+  border-bottom: solid #FFF 1px;
+}
+
+.hero-form-button {
+  height: 2.9rem;
+  min-width: 12rem;
+  padding: 0rem 2.2rem;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: 0.1rem;
+  border-color: #FFF;
+  background-color: #323131;
+  color: #FFF;
+  font-size: 1rem;
 }

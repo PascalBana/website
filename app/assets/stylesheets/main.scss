@@ -4,6 +4,22 @@
  *= require_self
 */
 
+:root {
+  --hero-container-height: 13.125rem;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Yantramanav', sans-serif;
+}
+h1 {
+  font-size: 3.25rem;
+}
+
+p {
+  font-family: "Rokkitt", serif;
+  font-size: 1.25rem;
+}
+
+button {
+  font-family: "Rokkitt", serif;
 }
