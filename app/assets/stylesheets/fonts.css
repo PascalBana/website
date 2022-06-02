@@ -2,6 +2,12 @@
   font-family: "Rokkitt";
   src:url('Rokkitt-VariableFont_wght.ttf');
 }
+
+@font-face {
+  font-family: "Rokkitt-special";
+  src:url('Rokkitt-SemiBold.ttf');
+}
+
 @font-face {
   font-family: "Yantramanav";
   src:url('Yantramanav-Regular.ttf');

@@ -2,6 +2,6 @@ class HomepageController < ApplicationController
   def index
   end
 
-  def gallery
+  def accommodation
   end
 end

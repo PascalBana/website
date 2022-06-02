@@ -73,7 +73,7 @@
               From the soft furnishings to the art and bath products there’s a sense of
               everyday luxe that inspires you to connect with the people and scenery
               around you.</p>
-            <ul class="article-list">
+            <ul class="article-list guest-rooms-list">
               <li>tv</li>
               <li>tuft & needle matresses</li>
               <li>malin + goetz bath products</li>
@@ -97,6 +97,7 @@
               season we close at 8pm M-W. Our hot tub area closes 15 minutes prior to
               the office. We are now offering coffee and tea service with a limited grab
               and go style breakfast to help kick off your day in beautiful Salida.</p>
+              <div class="space-divider"></div>
             <h3>Conde Naste Traveller Article</h3>
             <p>Interested but want to learn more about our space here at the Motor
               Lodge, check out this article.</p>
@@ -111,29 +112,81 @@
         </div>
       </article>
 
-      <article>
-        <h2>GET ON THE LIST</h2>
-        <picture>
-          <source src="https://" type="video/">
-        </picture>
-        <p>Curious to know more? Sign-up and we’ll keep you posted on property
-          updates and promotions.
-        </p>
-        <!-- insert minor form here -->
+      <article class="get-on-the-list-article">
+        <div class="get-on-the-list-top-container">
+          <div class="top-left-outline-get-on-the-list"></div>
+          <h2>GET ON THE LIST</h2>
+          <div class="top-right-outline-get-on-the-list"></div>
+        </div>
+        <div class="get-on-the-list-content-container">
+          <div class="get-on-the-list-image-container">
+            <picture class="get-on-the-list-picture">
+              <%= image_tag("blue-ocean.jpg", :alt =>
+                "white sand beach", :class => "get-on-the-list-main-img") %>
+            </picture>
+          </div>
+          <div class="get-on-the-list-info-container">
+            <div class="get-on-the-list-text-container">
+              <p>Curious to know more? Sign-up and we’ll keep you posted on property
+                updates and promotions.
+              </p>
+              <!-- insert minor form here -->
+            </div>
+          </div>
+        </div>
       </article>
-      <article class="">
+      <article >
         <h2>OUR NEIGHBORS</h2>
-        <img src="map" alt="map">
-        <p>From the ample mountain peaks (14ers if you’re in the know) to natural
-          hot springs to local distilleries, Salida is yours to explore with
-          activities that suit whatever mood you’re in.
-        </p>
-        <a href="#">Jaco Costa Rica</a>
-
+        <div class="article-content-container">
+          <div class="article-image-container">
+            <picture class="article-picture">
+              <%= image_tag("blue-ocean.jpg", :alt =>
+                "white sand beach", :class => "article-main-img") %>
+            </picture>
+          </div>
+          <div class="article-info-container">
+            <p>From the ample mountain peaks (14ers if you’re in the know) to natural
+              hot springs to local distilleries, Salida is yours to explore with
+              activities that suit whatever mood you’re in.
+            </p>
+            <ul class="article-list guest-rooms-list">
+              <li><a class="map-link" href="#">Jaco Costa Rica</a></li>
+            </ul>
+          </div>
+        </div>
       </article>
-
-
   </section>
 </main>
 <footer>
+  <div class="footer-head">
+    <h1>Find Us On Instagram</h1>
+  </div>
+  <div class="footer-image-conatainer">
+    <picture class="footer-picture">
+      <%= image_tag("blue-ocean.jpg", :alt =>
+        "white sand beach", :class => "footer-img") %>
+    </picture>
+    <picture class="footer-picture">
+      <%= image_tag("blue-ocean.jpg", :alt =>
+        "white sand beach", :class => "footer-img") %>
+    </picture>
+    <picture class="footer-picture">
+      <%= image_tag("blue-ocean.jpg", :alt =>
+        "white sand beach", :class => "footer-img") %>
+    </picture>
+    <picture class="footer-picture">
+      <%= image_tag("blue-ocean.jpg", :alt =>
+        "white sand beach", :class => "footer-img") %>
+    </picture>
+  </div>
+  <div class="footer-directory">
+    <a href="#">Contact Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Contact Us</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <div class="footer-end">
+    <p>Congratulations on reaching the bottom of the page :)</p>
+  </div>
 </footer>
