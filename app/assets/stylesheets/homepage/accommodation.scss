@@ -1,0 +1,132 @@
+////////////////////////
+///// Hero Section /////
+////////////////////////
+
+.accommodation-hero-section {
+  height: 20rem;
+}
+@media only screen and (min-width: 762px) {
+  .accommodation-hero-section {
+    height: 40vh;
+  }
+}
+
+/////////////////////////////////////////
+///// Accommodation Listing Section /////
+/////////////////////////////////////////
+
+.accommodation-section {
+  background-color: #FAF5ED;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accommodation-listing {
+  border-bottom: solid 1px #AAA;
+}
+
+////*** Accommodation Listing Upper Container ***////
+
+.accommodation-listing-upper-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+@media only screen and (min-width: 762px) {
+  .accommodation-listing-upper-container {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 1000px) {
+
+}
+
+// Accommodation Listing Images //
+
+.accommodation-listing-picture {
+  max-width: 93vw;
+  align-self: center;
+  margin-bottom: 2rem;
+}
+@media only screen and (min-width: 762px) {
+  .accommodation-listing-picture {
+    max-width: 32.5vw;
+    align-self: flex-start;
+  }
+}
+.accommodation-listing-img {
+  width: 93vw;
+  height: 58vw;
+  object-fit: cover;
+}
+@media only screen and (min-width: 762px) {
+  .accommodation-listing-img {
+    width: 32.5vw;
+    height: 22.5vw;
+    object-fit: cover;
+  }
+}
+// Accommodation Listing Info Container //
+
+.accommodation-listing-info-container {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.accommodation-listing-info-container > h2{
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.accommodation-listing-info-container > p{
+  margin-left: -1rem;
+  margin-right: -1rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+// Accommodation Listing Contact Container //
+
+.accommodation-listing-price {
+  text-align: center;
+  font-size: 1.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.accommodation-contact-button {
+  height: 3.25rem;
+  width: 80%;
+  border-width: 0px;
+  background-color: black;
+  color: #FFF;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+@media only screen and (min-width: 762px) {
+  .accommodation-contact-button {
+    height: 3.75rem;
+    width: 15vw;
+    min-width: 16rem;
+    padding: 0rem 2.2rem;
+    margin-left: 0.2rem;
+  }
+}
+
+////*** Accommodation Listing Lower Container ***////
+
+.accommodation-listing-lower-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.extra-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 8rem;
+}

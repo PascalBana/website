@@ -12,5 +12,6 @@
  *
  *= require main
  *= require homepage/index
+ *= require homepage/accommodation
  *= require_self
  */

@@ -32,7 +32,7 @@ h3 {
 
 p {
   font-family: "Rokkitt", serif;
-  font-size: 1.32rem;
+  font-size: 1.45rem;
   line-height: 140%;
 }
 
@@ -43,4 +43,12 @@ ul, ol, li {
 
 button {
   font-family: "Rokkitt", serif;
+  letter-spacing: 2px;
+}
+
+picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: auto;
 }

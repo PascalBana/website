@@ -18,20 +18,20 @@ header {
 // hero section //
 
 .hero-section {
-  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: column nowrap;
 }
+
+.index-hero-section{
+  height: 100vh;
+}
+
 // hero image //
 .hero-image {
   height: calc(100vh - var(--hero-container-height));
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: auto;
 }
 
 .hero-img {
@@ -87,9 +87,8 @@ header {
 }
 
 .hero-form-button {
-  height: 2.8rem;
   min-width: 12rem;
-  padding: 0rem 2.2rem;
+  padding: 1.1rem 2.1rem;
   margin-left: 0.2rem;
   border-style: solid;
   border-width: 1px;
@@ -97,8 +96,11 @@ header {
   border-color: #FFF;
   background-color: #323131;
   color: #FFF;
-  font-size: 1rem;
+  font-size: 1.2rem;
   cursor: pointer;
+  font-family: "Rokkitt", serif;
+  letter-spacing: 1px;
+  text-align: center;
 }
 ///////////////////////////
 // property info section //
@@ -120,10 +122,16 @@ header {
 article {
   padding-top: 3rem;
   padding-bottom: 3.125rem;
-  margin-left: calc(3.75rem - 1%);
-  margin-right: calc(3.75rem - 1%);
   display: flex;
   flex-flow: column nowrap;
+  margin-left: calc(1rem - 1%);
+  margin-right: calc(1rem - 1%);
+}
+@media only screen and (min-width: 762px) {
+  article {
+    margin-left: calc(3.75rem - 1%);
+    margin-right: calc(3.75rem - 1%);
+  }
 }
 
 article > h2 {
@@ -161,12 +169,6 @@ p {
 }
 
 // article images //
-.article-picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: auto;
-}
 
 .article-main-img {
   max-width: 100%;
@@ -287,10 +289,6 @@ a {
 
 // get on the list images //
 .get-on-the-list-picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: auto;
   padding-left: 2.5rem;
   padding-right: 1rem;
 }
@@ -342,10 +340,6 @@ footer{
 }
 
 .footer-picture {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex: auto;
   max-height: 20vw;
   max-width: 20vw;
 
