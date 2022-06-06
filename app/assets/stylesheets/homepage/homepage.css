@@ -1,0 +1,6 @@
+/*
+ *= require sitewide/main
+ *= require homepage/index
+ *= require homepage/gallery
+ *= require_self
+ */
