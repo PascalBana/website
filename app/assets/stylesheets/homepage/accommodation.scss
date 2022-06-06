@@ -20,26 +20,20 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .accommodation-listing {
   border-bottom: solid 1px #AAA;
-}
-
-////*** Accommodation Listing Upper Container ***////
-
-.accommodation-listing-upper-container {
+  max-width: 75rem;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
 }
 @media only screen and (min-width: 762px) {
-  .accommodation-listing-upper-container {
+  .accommodation-listing {
     flex-direction: row;
   }
-}
-@media only screen and (min-width: 1000px) {
-
 }
 
 // Accommodation Listing Images //
@@ -51,8 +45,9 @@
 }
 @media only screen and (min-width: 762px) {
   .accommodation-listing-picture {
-    max-width: 32.5vw;
+    max-width: 48rem;
     align-self: flex-start;
+    margin-bottom: 0rem;
   }
 }
 .accommodation-listing-img {
@@ -62,9 +57,11 @@
 }
 @media only screen and (min-width: 762px) {
   .accommodation-listing-img {
-    width: 32.5vw;
-    height: 22.5vw;
+    width: 55vw;
+    height: 41.25vw;
     object-fit: cover;
+    max-width: 46rem;
+    max-height: 30rem;
   }
 }
 // Accommodation Listing Info Container //
@@ -72,6 +69,12 @@
 .accommodation-listing-info-container {
   margin-left: 2rem;
   margin-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 1px #444;
+  border-bottom: solid 1px #444;
 }
 
 .accommodation-listing-info-container > h2{
@@ -86,14 +89,6 @@
   text-align: center;
 }
 
-// Accommodation Listing Contact Container //
-
-.accommodation-listing-price {
-  text-align: center;
-  font-size: 1.75rem;
-  margin-bottom: 0.25rem;
-}
-
 .accommodation-contact-button {
   height: 3.25rem;
   width: 80%;
@@ -101,10 +96,15 @@
   background-color: black;
   color: #FFF;
   font-size: 1.25rem;
+  letter-spacing: 2px;
   text-transform: uppercase;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: 10%;
   margin-right: 10%;
+
 }
 @media only screen and (min-width: 762px) {
   .accommodation-contact-button {
@@ -112,21 +112,8 @@
     width: 15vw;
     min-width: 16rem;
     padding: 0rem 2.2rem;
-    margin-left: 0.2rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
+    margin-top: 1rem;
   }
-}
-
-////*** Accommodation Listing Lower Container ***////
-
-.accommodation-listing-lower-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.extra-info {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 8rem;
 }

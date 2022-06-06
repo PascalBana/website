@@ -1,0 +1,64 @@
+//////////////////////////
+///////// footer /////////
+//////////////////////////
+
+footer{
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  padding-top: 5rem;
+}
+
+.footer-head {
+  display: flex;
+  flex: row nowrap;
+  border-bottom: solid 1px grey;
+  padding-bottom: 1rem;
+}
+
+.footer-head > h1{
+  color: inherit;
+  font-size: 2rem;
+}
+
+.footer-image-conatainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-bottom: 7rem;
+}
+
+.footer-picture {
+  max-height: 20vw;
+  max-width: 20vw;
+
+}
+
+.footer-img {
+  height: 20vw;
+  width: 20vw;
+  object-fit: cover;
+}
+
+.footer-directory {
+  display: flex;
+  flex: row nowrap;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.footer-directory > a {
+  color: inherit;
+  margin: 0rem 1rem 1.25rem;
+  font-size: 1.125rem;
+}
+
+.footer-end > p {
+  text-align: center;
+  color: inherit;
+  margin-bottom: 1rem;
+}
