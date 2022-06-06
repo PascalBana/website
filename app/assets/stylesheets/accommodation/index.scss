@@ -4,11 +4,19 @@
 
 .accommodation-hero-section {
   height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media only screen and (min-width: 762px) {
   .accommodation-hero-section {
     height: 40vh;
   }
+}
+
+.accommodation-title {
+  color: white;
+  text-transform: uppercase;
 }
 
 /////////////////////////////////////////
@@ -24,7 +32,7 @@
 }
 
 .accommodation-listing {
-  border-bottom: solid 1px #AAA;
+  border-bottom: solid 1px #CCC;
   max-width: 75rem;
   display: flex;
   flex-direction: column;
