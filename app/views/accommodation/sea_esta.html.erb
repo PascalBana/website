@@ -1,7 +1,13 @@
 <main>
   <section class="house-hero-section">
-    <h1>Sea-Esta</h1>
-    <p>A stunning home perfected with uninterupted ocean views</p>
+    <picture class="house-hero-picture">
+      <%= image_tag("costa-rica-photography-hero-image.jpg", :alt =>
+        "costa rican sunset", :class => "house-hero-img") %>
+    </picture>
+    <div class="house-hero-text">
+      <h1>Sea-Esta</h1>
+      <p>A stunning home perfected with uninterupted ocean views</p>
+    </div>
   </section>
   <section class="house-overview-section">
     <h2>views to inspire</h2>
@@ -11,29 +17,75 @@
 
       </div>
       <div class="house-overview">
-
+        <h3>House Overview</h3>
+        <p>Our Marina Harbour Rooms come with their own private terrace, and
+          sit within the seven-storey Marina Rise, a crescent-shaped residence
+          designed with traditional South African flair. Choose an inviting
+          king-size bed or two generous queen-size beds. Your en suite bathroom,
+          complete with dual marble vanities, oval bath and invigorating rain
+          shower, is the ideal place to unwind.
+        </p>
+        <p>If you can tear yourself away from the uplifting views of the harbour,
+          indulge in a visit to the hotel’s spectacular Spa Thermal Suites, an
+          exclusive benefit for all our Marina Rise guests.
+        </p>
       </div>
     </article>
     <aside class="house-extras">
-      <div class="">
-        <h2></h2>
-        <picture>
+      <div class="house-extras-text">
+        <h2>Breakfast with a view</h2>
+        <p>In the morning, awaken to breakfast on your private balcony or
+          terrace, and be greeted by a golden sunrise. One&Only's Private
+          Dining team can cater your perfect meal, as you like.</p>
+      </div>
+        <picture class="house-extras-picture">
 
         </picture>
-      </div>
+
     </aside>
   </section>
+
   <section class="additional-info-section">
     <div class="banner-image">
 
     </div>
-    <article class="you-may-also-like-article">
+    <p class="banner-text">
+      the city is yours to explore
+    </p>
+    <article class="additional-houses-article">
       <h2>you may also like</h2>
-      <div class="additional-accommodation">
+      <div class="additional-accommodation-container">
+        <div class="additional-accommodation">
+          <picture class="additional-accommodation-picture">
+            <%= image_tag("blue-ocean.jpg", :alt =>
+              "white sand beach", :class => "additional-accommodation-img") %>
+          </picture>
+          <div class="additional-accommodation-info">
+            <h3 class="additional-accommodation-title">La Palma</h3>
+            <p class="additional-accommodation-description">
+              On our lush private island, discover spacious, comfortable rooms
+              with your choice of a king-size or two queen-size beds, and magnificent
+              marina-facing terraces surrounding the resort's infinity-edge pool.
+            </p>
+            <a href="#" class="additional-accommodation-link">explore</a>
+          </div>
+        </div>
 
-      </div>
-      <div class="additional-accommodation">
-
+        <div class="additional-accommodation">
+          <picture class="additional-accommodation-picture">
+            <%= image_tag("blue-ocean.jpg", :alt =>
+              "white sand beach", :class => "additional-accommodation-img") %>
+          </picture>
+          <div class="additional-accommodation-info">
+            <h3 class="additional-accommodation-title">La Palma</h3>
+            <p class="additional-accommodation-description">
+              On our lush private island, discover spacious, comfortable rooms
+              with your choice of a king-size or two queen-size beds, and magnificent
+              marina-facing terraces surrounding the resort's infinity-edge pool.
+            </p>
+            <a href="#" class="additional-accommodation-link">explore</a>
+          </div>
+        </div>
       </div>
     </article>
   </section>
