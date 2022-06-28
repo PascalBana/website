@@ -29,7 +29,7 @@
   <section class="main-section">
 
       <article>
-        <h2>OUR PLEASURE</h2>
+        <h2 class="article-title">OUR PLEASURE</h2>
         <div class="article-content-container">
           <div class="article-info-container">
             <p>With a collection ranging from opulent mansions to rich hearted villas,
@@ -55,14 +55,8 @@
       </article>
 
       <article>
-        <h2>OUR ACCOMMODATIONS</h2>
-        <div class="article-content-container">
-          <div class="article-image-container">
-            <picture>
-              <%= image_tag("blue-ocean.jpg", :alt =>
-                "white sand beach", :class => "article-main-img") %>
-            </picture>
-          </div>
+        <h2 class="article-title">ACCOMMODATIONS</h2>
+        <div class="article-content-container reverse-article">
           <div class="article-info-container">
             <h3>Our Homes</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
@@ -81,12 +75,18 @@
             </p>
             <%= link_to "Click Here", accommodation_path, class: "article-link" %>
           </div>
+          <div class="article-image-container">
+            <picture>
+              <%= image_tag("blue-ocean.jpg", :alt =>
+                "white sand beach", :class => "article-main-img") %>
+            </picture>
+          </div>
         </div>
       </article>
 
 
       <article>
-        <h2>YOUR ADVENTURE</h2>
+        <h2 class="article-title">YOUR ADVENTURE</h2>
         <div class="article-content-container">
           <div class="article-info-container">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -113,7 +113,7 @@
       <article class="get-on-the-list-article">
         <div class="get-on-the-list-top-container">
           <div class="top-left-outline-get-on-the-list"></div>
-          <h2>GET ON THE LIST</h2>
+          <h2 class="list-article-title">GET ON THE LIST</h2>
           <div class="top-right-outline-get-on-the-list"></div>
         </div>
         <div class="get-on-the-list-content-container">
@@ -133,15 +133,9 @@
           </div>
         </div>
       </article>
-      <article >
-        <h2>OUR Location</h2>
-        <div class="article-content-container">
-          <div class="article-image-container">
-            <picture>
-              <%= image_tag("blue-ocean.jpg", :alt =>
-                "white sand beach", :class => "article-main-img") %>
-            </picture>
-          </div>
+      <article class="location-article">
+        <h2 class="article-title">OUR Location</h2>
+        <div class="article-content-container reverse-article">
           <div class="article-info-container">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -151,6 +145,12 @@
             <ul class="article-list guest-rooms-list">
               <li><a class="map-link" href="#">Jaco Costa Rica</a></li>
             </ul>
+          </div>
+          <div class="article-image-container">
+            <picture>
+              <%= image_tag("blue-ocean.jpg", :alt =>
+                "white sand beach", :class => "article-main-img") %>
+            </picture>
           </div>
         </div>
       </article>

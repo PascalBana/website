@@ -9,6 +9,13 @@
 :root {
   --hero-container-height: 13.125rem;
   --get-on-the-list-outline-color: #a97c50;
+  --mobile-article-side-padding: 1.5rem;
+
+}
+@media screen and (max-width: 600px) {
+  :root {
+    --hero-container-height: 45vh;
+  }
 }
 
 body {
@@ -39,6 +46,11 @@ p {
   line-height: 140%;
   margin-bottom: 1.875rem;
 }
+@media screen and (max-width: 600px) {
+  p {
+    font-size: 1.35rem;
+  }
+}
 
 ul, ol, li {
   font-family: "Rokkitt", serif;
@@ -67,17 +79,19 @@ article {
   padding-bottom: 3.125rem;
   display: flex;
   flex-flow: column nowrap;
-  margin-left: calc(1rem - 1%);
-  margin-right: calc(1rem - 1%);
+  margin-left: calc(3.75rem - 1%);
+  margin-right: calc(3.75rem - 1%);
+
 }
-@media only screen and (min-width: 762px) {
+@media only screen and (max-width: 600px) {
   article {
-    margin-left: calc(3.75rem - 1%);
-    margin-right: calc(3.75rem - 1%);
+    margin-left: 0rem;
+    margin-right: 0rem;
   }
 }
 
 article > h2 {
+  padding-bottom: 0.75rem;
   border-bottom: 1px solid black;
   margin-bottom: 2rem;
 }
