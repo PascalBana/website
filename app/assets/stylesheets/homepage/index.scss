@@ -138,15 +138,15 @@
 }
 //*** base article styles ***//
 
-.reverse-article {
-  flex-direction: row-reverse;
-}
-
 .article-content-container {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.reverse-article {
+  flex-direction: row-reverse;
 }
 @media only screen and (max-width: 600px) {
   .article-content-container {
