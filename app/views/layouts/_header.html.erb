@@ -1,14 +1,17 @@
 <header>
-  <!-- placeholder logo -->
-  <div class="placeholder-logo"></div>
-  <nav>
-    <ul class="nav-list">
-      <li><%= link_to "Homepage", homepage_path, class: "nav-link" %></li>
-      <li><%= link_to "Accomadations", accommodation_path, class: "nav-link" %></li>
-      <li><%= link_to "Gallery", accommodation_path, class: "nav-link" %></li>
-      <li><%= link_to "About Us", accommodation_path, class: "nav-link" %></li>
-      <li><%= link_to "Experiences", accommodation_path, class: "nav-link" %></li>
-    </ul>
-  </nav>
-  <a href="#" class="header-contact-us-btn">contact us</a>
+  <div class="mobile-menu-background"></div>
+  <button aria-expanded="false" class="mobile-nav-toggle"></button>
+  <div class="primary-navigation" data-visible="false">
+    <div class="placeholder-logo"></div>
+    <nav>
+      <ul class="nav-list">
+        <li><%= link_to "Homepage", homepage_path, class: "nav-link" %></li>
+        <li><%= link_to "Accomadations", accommodation_path, class: "nav-link" %></li>
+        <li><%= link_to "Gallery", accommodation_path, class: "nav-link" %></li>
+        <li><%= link_to "About Us", accommodation_path, class: "nav-link" %></li>
+        <li><%= link_to "Experiences", accommodation_path, class: "nav-link" %></li>
+      </ul>
+    </nav>
+    <a href="#" class="header-contact-us-btn">contact us</a>
+  </div>
 </header>
