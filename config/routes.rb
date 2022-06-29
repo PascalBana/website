@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   get 'homepage', to: 'homepage#index'
+  get 'contact_us', to: 'homepage#contact_us'
+  get 'gallery', to: 'homepage#gallery'
   get 'accommodation', to: 'accommodation#index'
   get 'sea-esta', to: 'accommodation#sea_esta'
   get 'la-palma', to: 'accommodation#la_palma'
