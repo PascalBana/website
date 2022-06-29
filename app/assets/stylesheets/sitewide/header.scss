@@ -106,7 +106,7 @@
     align-items: flex-start;
     gap: 3rem;
 
-    transform: translateX(100%);
+    transform: translateX(150%);
     transition: transform 200ms ease-out;
   }
 
@@ -124,6 +124,7 @@
     z-index: 9999;
     border: none;
     cursor: pointer;
+    background-color: white;
     background-image: url(menu.svg);
     background-repeat: no-repeat;
     background-size: cover;

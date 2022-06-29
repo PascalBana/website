@@ -9,7 +9,6 @@
 :root {
   --hero-container-height: 13.125rem;
   --get-on-the-list-outline-color: #a97c50;
-  --mobile-article-side-padding: 1.5rem;
 
 }
 @media screen and (max-width: 600px) {
@@ -20,6 +19,7 @@
 
 body {
   background-color: #000;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {

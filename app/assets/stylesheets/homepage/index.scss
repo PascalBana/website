@@ -67,6 +67,12 @@
   align-items: center;
   gap: 1rem;
 }
+@media screen and (max-width: 600px) {
+  .hero-form-container {
+    padding-right: 0vw;
+    padding-left: 0vw;
+  }
+}
 
 .form-select-container{
   display: flex;
@@ -183,8 +189,8 @@
 @media only screen and (max-width: 600px) {
   .article-info-container {
     width: 90%;
-    padding-left: var(--mobile-article-side-padding);
-    padding-right: var(--mobile-article-side-padding);
+    margin-left: auto;
+    margin-right: auto;
   }
   .article-image-container {
     width: 100%;

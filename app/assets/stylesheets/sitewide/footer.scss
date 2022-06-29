@@ -62,3 +62,14 @@ footer{
   color: inherit;
   margin-bottom: 1rem;
 }
+
+
+////*** mobile only styles ***////
+
+.footer-directory {
+  flex-direction: column;
+}
+
+.footer-image-conatainer {
+  display: none;
+}
