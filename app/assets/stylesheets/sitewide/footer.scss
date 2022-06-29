@@ -46,7 +46,7 @@ footer{
 
 .footer-directory {
   display: flex;
-  flex: row nowrap;
+  flex-flow: row nowrap;
   justify-content: center;
   gap: 4rem;
 }
@@ -54,7 +54,7 @@ footer{
 .footer-directory > a {
   color: inherit;
   margin: 0rem 1rem 1.25rem;
-  font-size: 1.125rem;
+  font-size: 1.5rem;
 }
 
 .footer-end > p {
@@ -66,10 +66,22 @@ footer{
 
 ////*** mobile only styles ***////
 
-.footer-directory {
-  flex-direction: column;
-}
+@media screen and (max-width: 600px) {
+  .footer-directory {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1rem;
+    border-bottom: solid 1px grey;
+    gap: 2rem;
+  }
 
-.footer-image-conatainer {
-  display: none;
+  .footer-directory > a {
+    margin: 0rem 1rem 1.25rem;
+  }
+
+  .footer-image-conatainer {
+    display: none;
+  }
+
 }
